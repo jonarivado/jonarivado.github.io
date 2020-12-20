@@ -14,7 +14,7 @@
   />
 </head>
 <body>
-    <div class="fixed bg-white dark:bg-black top-0 left-0 z-40 transition-all" style="height:100%; width:100%; transform:translateX(100%)" id="mobileNav">
+    <div class="fixed bg-white dark:bg-black top-0 left-0 z-40 transition-all" style="height:100%; width:100vw; overflow:hidden; transform:translateX(100%)" id="mobileNav">
         
         <a class="text-lg absolute right-2 top-2 text-right block hover:text-gray-400 p-6 transition" href="javascript:void(0)" onclick="closeMobileNav()">
             <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm0 10.293l5.293-5.293.707.707-5.293 5.293 5.293 5.293-.707.707-5.293-5.293-5.293 5.293-.707-.707 5.293-5.293-5.293-5.293.707-.707 5.293 5.293z"/></svg>
@@ -25,7 +25,7 @@
             <div class="table-row-group">
               <div class="table-row">
                 <div class="table-cell py-6">
-                    <a class="text-2xl hover:text-gray-400 transition" href="#">Home </a>
+                    <a class="text-2xl hover:text-gray-400 transition" onclick="closeMobileNav()" href="#">Home </a>
                 </div>
                 <div class="table-cell items-center">
                     <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M22 11.414v12.586h-20v-12.586l-1.293 1.293-.707-.707 12-12 12 12-.707.707-1.293-1.293zm-6 11.586h5v-12.586l-9-9-9 9v12.586h5v-9h8v9zm-1-7.889h-6v7.778h6v-7.778z"/></svg>
@@ -33,26 +33,26 @@
               </div>
               <div class="table-row">
                   <div class="table-cell py-6">
-                      <a class="text-2xl hover:text-gray-400 transition" href="#">About me</a>
+                      <a class="text-2xl hover:text-gray-400 transition" onclick="closeMobileNav()" href="#">About me</a>
                   </div>
                   <div class="table-cell">
-                      <fa-icon [icon]="faCubes"></fa-icon>
+                        <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M24 22h-24v-20h24v20zm-1-19h-22v18h22v-18zm-4 13v1h-4v-1h4zm-6.002 1h-10.997l-.001-.914c-.004-1.05-.007-2.136 1.711-2.533.789-.182 1.753-.404 1.892-.709.048-.108-.04-.301-.098-.407-1.103-2.036-1.305-3.838-.567-5.078.514-.863 1.448-1.359 2.562-1.359 1.105 0 2.033.488 2.545 1.339.737 1.224.542 3.033-.548 5.095-.057.106-.144.301-.095.41.14.305 1.118.531 1.83.696 1.779.41 1.773 1.503 1.767 2.56l-.001.9zm-9.998-1h8.999c.003-1.014-.055-1.27-.936-1.473-1.171-.27-2.226-.514-2.57-1.267-.174-.381-.134-.816.119-1.294.921-1.739 1.125-3.199.576-4.111-.332-.551-.931-.855-1.688-.855-.764 0-1.369.31-1.703.871-.542.91-.328 2.401.587 4.09.259.476.303.912.13 1.295-.342.757-1.387.997-2.493 1.252-.966.222-1.022.478-1.021 1.492zm18-3v1h-6v-1h6zm0-3v1h-6v-1h6zm0-3v1h-6v-1h6z"/></svg>
                   </div>
                 </div>
                 <div class="table-row">
                     <div class="table-cell py-6">
-                        <a class="text-2xl hover:text-gray-400 transition" href="#">Experience</a>
+                        <a class="text-2xl hover:text-gray-400 transition" onclick="closeMobileNav()" href="#">Experience</a>
                     </div>
                     <div class="table-cell">
-                        <fa-icon [icon]="faUsers"></fa-icon>
+                            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M22 9.74l-2 1.02v7.24c-1.007 2.041-5.606 3-8.5 3-3.175 0-7.389-.994-8.5-3v-7.796l-3-1.896 12-5.308 11 6.231v8.769l1 3h-3l1-3v-8.26zm-18 1.095v6.873c.958 1.28 4.217 2.292 7.5 2.292 2.894 0 6.589-.959 7.5-2.269v-6.462l-7.923 4.039-7.077-4.473zm-1.881-2.371l9.011 5.694 9.759-4.974-8.944-5.066-9.826 4.346z"/></svg>
                     </div>
                   </div>
                   <div class="table-row">
                     <div class="table-cell py-6">
-                        <a class="text-2xl hover:text-gray-400 transition" href="#">Contact</a>
+                        <a class="text-2xl hover:text-gray-400 transition" onclick="closeMobileNav()" href="#">Contact</a>
                     </div>
                     <div class="table-cell">
-                        <fa-icon [icon]="faCubes"></fa-icon>
+                            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M24 21h-24v-18h24v18zm-23-16.477v15.477h22v-15.477l-10.999 10-11.001-10zm21.089-.523h-20.176l10.088 9.171 10.088-9.171z"/></svg>
                     </div>
                   </div>
             </div>
@@ -60,12 +60,12 @@
           </div>
     </div>
     
-    <nav class="bg-white relative z-10 sticky">
+    <nav class="w-screen z-10 fixed top-0" id="mynav">
       <div class="container flex items-center justify-between mx-auto px-6 py-2 text-left">
         <p class="font-bold text-4xl">JRD.</p>
         
         <div class="space-x-12 hidden md:block">
-          <a class="text-lg hover:text-gray-400 transition" href="#"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M22 11.414v12.586h-20v-12.586l-1.293 1.293-.707-.707 12-12 12 12-.707.707-1.293-1.293zm-6 11.586h5v-12.586l-9-9-9 9v12.586h5v-9h8v9zm-1-7.889h-6v7.778h6v-7.778z"/></svg></a>
+          <a class="text-lg hover:text-gray-400 transition inline-block" href="#home"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M22 11.414v12.586h-20v-12.586l-1.293 1.293-.707-.707 12-12 12 12-.707.707-1.293-1.293zm-6 11.586h5v-12.586l-9-9-9 9v12.586h5v-9h8v9zm-1-7.889h-6v7.778h6v-7.778z"/></svg></a>
           <a class="text-lg hover:text-gray-400 transition" href="#">About me</a>
           <a class="text-lg hover:text-gray-400 transition" href="#">Experience</a>
           <a class="text-lg hover:text-gray-400 transition" href="#">Contact</a>
@@ -78,20 +78,29 @@
       </div>
     </nav>
     
-    <div class="container mx-auto px-6">
-        <div class="grid flex grid-cols-3 pt-20">
-            <div class="col-span-2 fadeOut">
-                <h1 class="font-bold text-8xl animate__animated animate__fadeInLeft ">Hi, I'm Jonathan!</h1> <br>
-                <h2 class="font-bold text-4xl animate__delay-1s animate__animated animate__fadeInLeft">I’m an engineering student @ ETH Zürich and a web developer.</h2>
-                <br><br><br><br>
-                <p class="text-2xl">Want to get to know me better? Scroll down 😊</p>
+    <div class="container mx-auto px-6 pt-20 h-screen">
+        <div class="grid flex grid-cols-1 md:grid-cols-3 pt-20" id="home">
+            <div class="md:hidden block p-12">
+                    <img class="myImage mx-auto" src="assets/jonathan.png" width="50%" style="border-radius:200px">
             </div>
-            <div>
+            <div class="md:col-span-2 col-span-1 fadeOut">
+                <h1 class="font-bold md:text-8xl text-4xl animate__animated animate__fadeInLeft ">Hi, I'm Jonathan!</h1> <br>
+                <h2 class="font-bold md:text-4xl text-2xl animate__delay-1s animate__animated animate__fadeInLeft">I’m an engineering student @ ETH Zürich and a web developer.</h2>
+                <div class="hidden md:block">
+                <br><br><br><br>
+            </div>
+                <p class="md:text-2xl text-xl">Want to get to know me better? Scroll down 😊</p>
+            </div>
+            <div class="hidden md:block">
                 <img class="myImage" src="assets/jonathan.png" alt="">
             </div>
         </div>
     </div>
-
+    <div class="bg-black h-screen">
+        <div class="container mx-auto px-6 pt-20 h-screen">
+            
+        </div>
+    </div>
     <div style="height: 1500px;"></div>
                 
 </body>
