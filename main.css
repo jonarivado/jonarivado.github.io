@@ -1,3 +1,15 @@
 nav {
     filter: blur(50);
 }
+
+.myImage {
+    display: inline-block;
+    animation: slideRight 1s linear infinite;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+  }
+.fadeOut {
+    animation: fadeOut 1s;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll)*-1s);
+}

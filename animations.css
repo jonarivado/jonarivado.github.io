@@ -1,0 +1,16 @@
+@keyframes rotate {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes slideRight {
+    to {
+      transform: translateX(50vw);
+    }
+  }
+
+  @keyframes fadeOut {
+    to {
+      opacity: 0;
+    }
+  }
