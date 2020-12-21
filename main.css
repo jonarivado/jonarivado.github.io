@@ -3,12 +3,15 @@ html {
   }
 
 nav {
-    backdrop-filter: blur(30px);
+    backdrop-filter: blur(20px);
     color: black;
-    background-color: rgba(255, 255, 255, 0.8)
 }
+
 .nav-colored { background-color:#0a0a0a; }
 .nav-transparent { background-color:transparent;}
+.navSvg {
+  fill: black;
+}
 
 .myImage {
     animation: slideRight 1s linear infinite;
@@ -21,12 +24,16 @@ nav {
     animation-delay: calc(var(--scroll)*-1s);
 }
 
+.edu::before {
+  content: '─ ';
+}
+
 .resume {
   animation: toTopRight 1s;
   animation-play-state: paused;
   animation-delay: calc(var(--scroll)*-1s);
   font-size: 30rem;
-  color: #0a0a0a;
+  color: #070707;
   position: absolute;
   left: -500px;
   bottom: -400px;
@@ -39,3 +46,5 @@ nav {
     bottom: -200px;
   }
 }
+
+
