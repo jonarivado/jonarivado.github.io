@@ -19,3 +19,21 @@ nav {
     animation-play-state: paused;
     animation-delay: calc(var(--scroll)*-1s);
 }
+
+.resume {
+  animation: toTopRight 1s;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll)*-1s);
+  font-size: 30rem;
+  color: #0a0a0a;
+  position: absolute;
+  left: -500px;
+  bottom: -400px;
+  transform: rotate(-30deg);
+  line-height: 100vh;
+}
+@media (max-width: 768px) {
+  .resume {
+    font-size: 10rem;
+  }
+}

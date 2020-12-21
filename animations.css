@@ -14,3 +14,10 @@
       opacity: 0;
     }
   }
+
+  @keyframes toTopRight {
+    to {
+      transform: translate3D(500px, -500px, 0) rotate(-30deg);
+      
+    }
+  }
