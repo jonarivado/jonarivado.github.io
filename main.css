@@ -35,6 +35,7 @@ nav {
 }
 @media (max-width: 768px) {
   .resume {
-    font-size: 10rem;
+    font-size: 20rem;
+    bottom: -200px;
   }
 }
