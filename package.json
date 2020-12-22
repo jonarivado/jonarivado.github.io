@@ -19,6 +19,7 @@
   "dependencies": {
     "animate.css": "^4.1.1",
     "autoprefixer": "^10.1.0",
+    "lazy-line-painter": "^1.9.6",
     "postcss": "^8.2.1",
     "tailwindcss": "^2.0.2"
   }
