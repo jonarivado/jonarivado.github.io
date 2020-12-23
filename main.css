@@ -47,4 +47,18 @@ nav {
   }
 }
 
+.progress-bar {
+  width: 100%;
+  background-color: #cccccc;
+}
 
+.progress-bar-fill {
+  display: block;
+  height: 10px;
+  background: linear-gradient(-90deg,#69fbff,#ef04dd);
+  transition: progress ease-out;
+  animation: progress 2s;
+}
+@keyframes progress {
+  from {width: 0%  }
+}

@@ -16,7 +16,7 @@
   />
 </head>
 <body>
-    <div class="fixed bg-white dark:bg-black top-0 left-0 z-40 transition-all" style="height:100%; width:100vw; overflow:hidden; transform:translateX(100%)" id="mobileNav">
+    <div class="fixed bg-white dark:bg-black top-0 left-0 z-40" style="transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1); height:100%; width:100vw; overflow:hidden; transform:translateX(100%)" id="mobileNav">
         
         <a class="text-lg absolute right-2 top-2 text-right block hover:text-gray-400 p-6 transition" href="javascript:void(0)" onclick="closeMobileNav()">
             <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm0 10.293l5.293-5.293.707.707-5.293 5.293 5.293 5.293-.707.707-5.293-5.293-5.293 5.293-.707-.707 5.293-5.293-5.293-5.293.707-.707 5.293 5.293z"/></svg>
@@ -62,7 +62,7 @@
           </div>
     </div>
     
-    <nav class="w-full z-10 fixed top-0 z-40" id="mynav">
+    <nav class="w-full z-10 fixed top-0 z-30" id="mynav">
       <div class="container flex items-center justify-between mx-auto px-6 py-2 text-left">
         <p class="font-bold text-4xl">JRD.</p>
         
@@ -169,13 +169,85 @@
                 </div>
         </div>
     </div>
-
+    <div id="engineeringSkill" class="fixed bg-red-400 top-0 left-0 z-40" style="transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1); height:100%; width:100vw; overflow:hidden; transform:translateX(-100%)">
+        <a class="text-lg absolute right-2 top-2 text-right block hover:text-gray-400 p-6 transition" href="javascript:void(0)" onclick="hideDiv('engineeringSkill')">
+            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm0 10.293l5.293-5.293.707.707-5.293 5.293 5.293 5.293-.707.707-5.293-5.293-5.293 5.293-.707-.707 5.293-5.293-5.293-5.293.707-.707 5.293 5.293z"/></svg>
+        </a>
+    </div>
+    <div id="webDevSkill" class="fixed bg-green-400 top-0 left-0 z-40" style="transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1); height:100%; width:100vw; overflow:hidden; transform:translateX(-100%)">
+            <a class="text-lg absolute right-2 top-2 text-right block hover:text-gray-400 p-6 transition" href="javascript:void(0)" onclick="hideDiv('webDevSkill')">
+                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm0 10.293l5.293-5.293.707.707-5.293 5.293 5.293 5.293-.707.707-5.293-5.293-5.293 5.293-.707-.707 5.293-5.293-5.293-5.293.707-.707 5.293 5.293z"/></svg>
+            </a>
+        </div>
     <div class="bg-white h-screen relative overflow-hidden" id="skills">
-        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 p-6 gap-20 mt-12">
-
+            
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 p-6 gap-20 mt-12">
+            <div class="h-full">
+                <h2 class="font-bold md:text-8xl text-6xl">Skills</h2>
+            </div>
+            <div class="shadow-xl h-full p-6 hover:bg-gray-100 transition" onclick="showDiv('engineeringSkill')" style="cursor: pointer">
+                <h2 class="font-bold md:text-4xl text-2xl">Engineering</h2>
+                <div class="table-auto pt-6">
+                    <div class="table-row-group">
+                        <div class="table-row ">
+                            <div class="table-cell pr-6 text-2xl py-2">CAD</div>
+                            <div class="table-cell w-full">
+                                <div class="progress-bar">
+                                 <span class="progress-bar-fill" style="width: 40%;"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-row-group">
+                            <div class="table-row ">
+                                <div class="table-cell pr-6 text-2xl py-2">FEA</div>
+                                <div class="table-cell w-full">
+                                    <div class="progress-bar">
+                                     <span class="progress-bar-fill" style="width: 50%;"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="shadow-xl h-full p-6 hover:bg-gray-100 transition" onclick="showDiv('webDevSkill')" style="cursor: pointer">
+                    <h2 class="font-bold md:text-4xl text-2xl">Web development</h2>
+                    <div class="table-auto pt-6">
+                        <div class="table-row-group">
+                            <div class="table-row ">
+                                <div class="table-cell pr-6 text-2xl py-2">Angular</div>
+                                <div class="table-cell w-full">
+                                    <div class="progress-bar">
+                                     <span class="progress-bar-fill" style="width: 50%;"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="table-row-group">
+                            <div class="table-row ">
+                                <div class="table-cell pr-6 text-2xl py-2">Tailwind</div>
+                                <div class="table-cell w-full">
+                                    <div class="progress-bar">
+                                        <span class="progress-bar-fill" style="width: 70%;"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="table-row-group">
+                            <div class="table-row ">
+                                <div class="table-cell pr-6 text-2xl py-2">Flask</div>
+                                <div class="table-cell w-full">
+                                    <div class="progress-bar">
+                                        <span class="progress-bar-fill" style="width: 40%;"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </div>
     </div>
-    <div style="height: 2000px;"></div>
-                
+
+    <div style="height: 2000px;"></div>         
 </body>
 </html>

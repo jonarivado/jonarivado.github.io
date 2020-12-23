@@ -56,3 +56,12 @@ function closeMobileNav() {
                 myAnimation.paint();
     }
   }
+
+  //show or hide skill pages
+  function showDiv(id) {
+    document.getElementById(id).style.transform = "translateX(0%)";
+  }
+
+function hideDiv(id) {
+    document.getElementById(id).style.transform = "translateX(-100%)";
+  }
