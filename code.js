@@ -51,8 +51,8 @@ function closeMobileNav() {
        * see README file for more settings
        */
 
-      let el = document.querySelector('#fibbonaci');
-      let myAnimation = new LazyLinePainter(el, {"ease":"easeOutQuad","strokeWidth":1,"strokeOpacity":1,"strokeColor":"#000000","strokeCap":"round","delay":850,"reverse":true}); 
-      myAnimation.paint(); 
+      let el = document.querySelector('#jonathanSun');
+                let myAnimation = new LazyLinePainter(el, {"ease":"easeInOutQuad","strokeWidth":1,"strokeOpacity":1,"strokeColor":"#222F3D","strokeCap":"square","reverse":true}); 
+                myAnimation.paint();
     }
   }
