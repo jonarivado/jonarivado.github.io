@@ -46,15 +46,17 @@ function closeMobileNav() {
   
     if (document.readyState === 'complete') {
               
-      /**
-       * Setup your Lazy Line element.
-       * see README file for more settings
-       */
-
       let el = document.querySelector('#jonathanSun');
                 let myAnimation = new LazyLinePainter(el, {"ease":"easeInOutQuad","strokeWidth":1,"strokeOpacity":1,"strokeColor":"#222F3D","strokeCap":"square","reverse":true}); 
                 myAnimation.paint();
     }
+    if(isElementInViewport(document.getElementById('skills'))) {
+      var x = document.getElementsByClassName('progress-bar-fill');
+      var i;
+      for(i=0; i<x.length; i++) {
+        x[i].classList.add('progress_animate');
+      }
+     }
   }
 
   //show or hide skill pages

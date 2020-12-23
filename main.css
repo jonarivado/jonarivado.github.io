@@ -56,9 +56,12 @@ nav {
   display: block;
   height: 10px;
   background: linear-gradient(-90deg,#69fbff,#ef04dd);
-  transition: progress ease-out;
+}
+
+.progress_animate {
   animation: progress 2s;
 }
+
 @keyframes progress {
   from {width: 0%  }
 }
