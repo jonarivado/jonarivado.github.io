@@ -24,10 +24,10 @@ function closeMobileNav() {
     document.getElementById('mynav').style.color = 'black';
    }
 
-   if(isElementInViewport(document.getElementById('edu'))) {
+  /* if(isElementInViewport(document.getElementById('edu'))) {
     document.getElementById('edu').classList.add('animate__animated', 'animate__slideInUp');
 
-   }
+   }*/
 
   }, false);
 
@@ -67,3 +67,4 @@ function closeMobileNav() {
 function hideDiv(id) {
     document.getElementById(id).style.transform = "translateX(-100%)";
   }
+
