@@ -86,8 +86,8 @@
             </div>
       </div>
     </nav>
-    
-    <div class="container mx-auto px-6 pt-20 h-screen overflow-hidden">
+<div class="overflow-hidden">
+    <div class="container mx-auto px-6 pt-20 md:h-screen">
         <div class="grid flex grid-cols-1 md:grid-cols-3 pt-20" id="home">
             <div class="md:hidden block overflow-hidden">
                     <img class="myImage mx-auto" src="assets/jonathanSun.svg" width="100%" style="border-radius:200px">
@@ -105,6 +105,7 @@
             </div>
         </div>
     </div>
+</div>
     <div class="bg-black relative overflow-hidden" style="min-height: 100vh" id="resume">
         <h1 class="font-bold my-auto resume">Résumé</h1>
         <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 p-6 gap-20 mt-12" id="edu">
@@ -298,13 +299,13 @@
                                 <div class="table-cell pr-6 text-2xl py-2">Management</div>
                                 <div class="table-cell w-full">
                                     <div class="progress-bar">
-                                        <span class="progress-bar-fill" style="width: 100%;"></span>
+                                        <span class="progress-bar-fill" style="width: 80%;"></span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                             <div class="table-row " data-aos="fade-up">
-                                <div class="table-cell pr-6 text-2xl py-2">English</div>
+                                <div class="table-cell pr-6 text-2xl py-2">Teaching</div>
                                 <div class="table-cell w-full">
                                     <div class="progress-bar">
                                         <span class="progress-bar-fill" style="width: 90%;"></span>
@@ -333,44 +334,12 @@
                 </div>
                 <div data-aos="fade-up" class="shadow-xl h-full p-6 hover:bg-gray-100 transition" onclick="showDiv('webDevSkill')" style="cursor: pointer">
                         <h2 class="font-bold md:text-4xl text-2xl">Hobbies</h2>
-                        <div class="table-auto pt-6">
-                            <div class="table-row-group">
-                                <div class="table-row " data-aos="fade-up">
-                                    <div class="table-cell pr-6 text-2xl py-2">German</div>
-                                    <div class="table-cell w-full">
-                                        <div class="progress-bar">
-                                            <span class="progress-bar-fill" style="width: 100%;"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                                <div class="table-row " data-aos="fade-up">
-                                    <div class="table-cell pr-6 text-2xl py-2">English</div>
-                                    <div class="table-cell w-full">
-                                        <div class="progress-bar">
-                                            <span class="progress-bar-fill" style="width: 90%;"></span>
-                                        </div>
-                                    </div>
-                                </div>
-        
-                                <div class="table-row " data-aos="fade-up">
-                                    <div class="table-cell pr-6 text-2xl py-2">French</div>
-                                    <div class="table-cell w-full">
-                                        <div class="progress-bar">
-                                            <span class="progress-bar-fill" style="width: 50%;"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            <div class="table-row " data-aos="fade-up">
-                                    <div class="table-cell pr-6 text-2xl py-2">Indonesian</div>
-                                    <div class="table-cell w-full">
-                                        <div class="progress-bar">
-                                            <span class="progress-bar-fill" style="width: 50%;"></span>
-                                        </div>
-                                    </div>
-                                </div>
-        
-                        </div>
+                        <ul class="text-2xl pt-6">
+                            <li data-aos="fade-up">Music production</li>
+                            <li data-aos="fade-up">Snowboarding</li>
+                            <li data-aos="fade-up">Webdev side projects</li>
+                            <li data-aos="fade-up">Boxing</li>
+                        </ul>
                     </div>
         </div>
     </div>

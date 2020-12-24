@@ -13,6 +13,10 @@ nav {
   fill: black;
 }
 
+li::before {
+  content: '─ '
+}
+
 .myImage {
     animation: slideRight 1s linear infinite;
     animation-play-state: paused;
