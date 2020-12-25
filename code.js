@@ -24,22 +24,27 @@ function closeMobileNav() {
     document.getElementById('mynav').style.color = 'black';
    }
 
-  /* if(isElementInViewport(document.getElementById('edu'))) {
-    document.getElementById('edu').classList.add('animate__animated', 'animate__slideInUp');
 
-   }*/
 
   }, false);
 
-  function isElementInViewport(element) {
-    var rect = element.getBoundingClientRect();
-    return (
-     rect.top >= 0 &&
-     rect.left >= 0 &&
-     rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
-   }
+  var callScroll = false;
+
+  document.addEventListener('aos:in:call', ({ detail }) => {
+    if(!callScroll){
+    let el2 = document.querySelector('#call');
+    let myAnimation2 = new LazyLinePainter(el2, {"ease":"easeInOutQuad","strokeWidth":1,"strokeOpacity":1,"strokeColor":"#222F3D","strokeCap":"square"}); 
+    myAnimation2.paint(); 
+    callScroll = true;
+  }
+  });
+
+
+ /*function isElementInViewport(elem) {
+    var div = document.getElementById(elem)
+    var clientHeight = div.offsetHeight();
+    return clientHeight >= 0;
+  }*/
 
 //fibbonaci animation
    document.onreadystatechange = () => {
@@ -47,26 +52,21 @@ function closeMobileNav() {
     if (document.readyState === 'complete') {
               
       let el = document.querySelector('#jonathanSun');
-                let myAnimation = new LazyLinePainter(el, {"ease":"easeInOutQuad","strokeWidth":1,"strokeOpacity":1,"strokeColor":"#222F3D","strokeCap":"square","reverse":true}); 
+      let myAnimation = new LazyLinePainter(el, {"ease":"easeInOutQuad","strokeWidth":1,"strokeOpacity":1,"strokeColor":"#222F3D","strokeCap":"square","reverse":true}); 
                 myAnimation.paint();
     }
-    if(isElementInViewport(document.getElementById('skills'))) {
-      var x = document.getElementsByClassName('progress-bar-fill');
-      var i;
-      for(i=0; i<x.length; i++) {
-        x[i].classList.add('progress_animate');
-      }
-     }
   }
 
   //show or hide skill pages
   function showDiv(id) {
+    //document.getElementById(id).style.display = 'block';
     document.getElementById(id).style.transform = "translateX(0%)";
     document.body.classList.add('noscroll');
   }
 
 function hideDiv(id) {
     document.getElementById(id).style.transform = "translateX(-100%)";
+    //document.getElementById(id).style.display = 'hidden';
     document.body.classList.remove('noscroll');
   }
 

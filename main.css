@@ -70,3 +70,7 @@ li::before {
 .noscroll {
   overflow: hidden;
 }
+
+.button {
+  background: linear-gradient(-90deg,#69faff98,#ef04dd80);
+}
