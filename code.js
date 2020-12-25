@@ -62,9 +62,11 @@ function closeMobileNav() {
   //show or hide skill pages
   function showDiv(id) {
     document.getElementById(id).style.transform = "translateX(0%)";
+    document.body.classList.add('noscroll');
   }
 
 function hideDiv(id) {
     document.getElementById(id).style.transform = "translateX(-100%)";
+    document.body.classList.remove('noscroll');
   }
 

@@ -54,6 +54,7 @@ li::before {
 .progress-bar {
   width: 100%;
   background-color: #cccccc;
+  overflow: hidden;
 }
 
 .progress-bar-fill {
@@ -64,4 +65,8 @@ li::before {
 
 .progress_animate {
   animation: progress 2s;
+}
+
+.noscroll {
+  overflow: hidden;
 }
