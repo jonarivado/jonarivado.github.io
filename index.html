@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jonathan Dotzler</title>
+    <meta name="description" content="Hi! I'm Jonathan. This is my online version of my CV. Feel free to contact me for any inquiries.">
+    <meta name="keywords" content="HTML, CSS, JavaScript, CV, Engineering, ETH Zürich, Web developer, Web design">
+    <meta name="author" content="Jonathan Rivaldi Dotzler">
+    <title>CV Jonathan Dotzler</title>
     <link rel="stylesheet" href="output.css">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="animations.css">
@@ -11,18 +14,20 @@
     <script src="https://kit.fontawesome.com/ba5bf96108.js" crossorigin="anonymous"></script>
     <script src="lazy-line-painter-1.9.6.min.js"></script>
 
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <link rel="stylesheet" href="node_modules/aos/dist/aos.css" />
+    <script src="node_modules/aos/dist/aos.js"></script>
 
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">   
     <!-- <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   /> -->
 </head>
 <body>
-        <script>
-                AOS.init();
-              </script>
+<script>
+    AOS.init();
+</script>
     <div class="fixed bg-white dark:bg-black top-0 left-0 z-40" style="transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1); height:100%; width:100vw; overflow:hidden; transform:translateX(100%)" id="mobileNav">
         
         <a class="text-lg absolute right-2 top-2 text-right block hover:text-gray-400 p-6 transition" href="javascript:void(0)" onclick="closeMobileNav()">
@@ -110,7 +115,7 @@
         <h1 class="font-bold my-auto resume">Résumé</h1>
         <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 p-6 gap-20 mt-12" id="edu">
             <div class="block z-10" >
-                <h1 class="font-bold md:text-6xl text-4xl text-white" data-aos="fade-up">Education</h1>
+                <h1 class="font-bold md:text-8xl text-6xl text-white" data-aos="fade-up">Education</h1>
                 <div class="table w-full text-white font-light text-xl md:text-xl pt-12 z-10">
                     <div class="table-row-group" data-aos="fade-right">
                       <div class="table-row ">
@@ -140,7 +145,7 @@
 
             </div>
             <div class="z-10">
-                    <h1 class="font-bold md:text-6xl text-4xl text-white" data-aos="fade-up">Experience</h1>
+                    <h1 class="font-bold md:text-8xl text-6xl text-white" data-aos="fade-up">Experience</h1>
                     <div class="table w-full text-white font-light text-xl md:text-xl pt-12">
                             <div class="table-row-group" data-aos="fade-left">
                                 <div class="table-row ">
@@ -457,7 +462,7 @@
 </div>
     <div class="bg-gray-100 overflow-hidden" style="min-height: 100vh" id="contact">
         <div class="container mx-auto px-6 pt-20 md:h-screen " style="min-height: 100vh" >
-            <h2 class="font-bold text-6xl" data-aos="fade-up" data-aos-id="call">Contact</h2>
+            <h2 class="font-bold md:text-8xl text-6xl" data-aos="fade-up" data-aos-id="call">Contact</h2>
             <div class="grid flex grid-cols-1 md:grid-cols-2 pt-12">
                 <div class="md:col-span-1 col-span-1">
                     <p class="text-2xl pb-12" data-aos="fade-up">Feel free to contact me for any inquiries you might have!
