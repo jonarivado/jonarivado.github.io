@@ -71,7 +71,7 @@ li::before {
   overflow: hidden;
 }
 
-.button {
+button {
   background: linear-gradient(-90deg,#69faff98,#ef04dd80);
 }
 .buttonBorder {
