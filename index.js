@@ -11,7 +11,7 @@ function closeMobileNav() {
 
   window.addEventListener('scroll', () => { 
     document.body.style.setProperty('--scroll',window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
-  
+    
    }, false);
 
   window.addEventListener('scroll', () => {
@@ -23,10 +23,15 @@ function closeMobileNav() {
    else {
     document.getElementById('mynav').style.color = 'black';
    }
-
+   
 
 
   }, false);
+
+  document.addEventListener('aos:in:education', ({ detail }) => {
+    document.getElementById('arrowDown').style.display = 'none';
+  
+  });
 
   var callScroll = false;
 
