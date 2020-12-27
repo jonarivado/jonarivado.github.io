@@ -3,8 +3,9 @@ html {
   }
 
 nav {
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(40px);
     color: black;
+    
 }
 
 .nav-colored { background-color:#0a0a0a; }
