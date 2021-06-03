@@ -1,42 +1,45 @@
 html {
-    scroll-behavior: smooth;
-  }
-
-nav {
-    backdrop-filter: blur(40px);
-    color: black;
-    
+  /*scroll-behavior: auto;*/
 }
 
-.nav-colored { background-color:#0a0a0a; }
-.nav-transparent { background-color:transparent;}
+nav {
+  backdrop-filter: blur(40px);
+  color: black;
+}
+
+.nav-colored {
+  background-color: #0a0a0a;
+}
+.nav-transparent {
+  background-color: transparent;
+}
 .navSvg {
   fill: black;
 }
 
 li::before {
-  content: '─ '
+  content: "─ ";
 }
 
 .myImage {
-    animation: slideRight 1s linear infinite;
-    animation-play-state: paused;
-    animation-delay: calc(var(--scroll) * -1s);
-  }
+  animation: slideRight 1s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+}
 .fadeOut {
-    animation: fadeOut 0.3s;
-    animation-play-state: paused;
-    animation-delay: calc(var(--scroll)*-1s);
+  animation: fadeOut 0.3s;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
 }
 
 .edu::before {
-  content: '─ ';
+  content: "─ ";
 }
 
 .resume {
   animation: toTopRight 1s;
   animation-play-state: paused;
-  animation-delay: calc(var(--scroll)*-1s);
+  animation-delay: calc(var(--scroll) * -1s);
   font-size: 30rem;
   color: #070707;
   position: absolute;
@@ -61,7 +64,7 @@ li::before {
 .progress-bar-fill {
   display: block;
   height: 10px;
-  background: linear-gradient(-90deg,#69fbff,#ef04dd);
+  background: linear-gradient(-90deg, #69fbff, #ef04dd);
 }
 
 .progress_animate {
@@ -73,11 +76,15 @@ li::before {
 }
 
 button {
-  background: linear-gradient(-90deg,#69faff98,#ef04dd80);
+  background: linear-gradient(-90deg, #69faff98, #ef04dd80);
 }
 .buttonBorder {
   border: solid 2px transparent;
-  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(-101deg, #69fbff90, #ef04dd90);
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0)
+    ),
+    linear-gradient(-101deg, #69fbff90, #ef04dd90);
   background-origin: border-box;
   background-clip: content-box, border-box;
   box-shadow: 2px 1000px 1px #f3f4f6 inset;
