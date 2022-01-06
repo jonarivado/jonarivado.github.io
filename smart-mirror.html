@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="output.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+  <link href="src/style.css" rel="stylesheet">
+  <script src="src/consts.js"></script>
+  <script src="src/weather.js"></script>
+  
+</head>
+<body class="bg-black text-white">
+    
+    <div class="grid grid-cols-3 divide-x p-8">
+      <div class="p-4 row-span-2">
+        <div class="text-6xl font-bold justify-items-center text-center pb-8" id="time"></div>
+
+        <div class="grid grid-cols-2 gap-2 items-center pb-8">
+          <div><img id="weather-icon"/></div>
+          <div class="text-8xl font-bold text-center" id="temperature"></div>
+          <div class="grid grid-cols-2 h-10 justify-items-center">
+          <div class="text-center"><img src="src/img/weather/raindrop.svg" width="29px"></div>
+          <div class="text-xl text-center" id="rain"></div>
+        </div>
+        <div class="grid grid-cols-2 h-10 justify-items-center">
+          <div class="text-center"><img src="src/img/weather/wind.svg" width="29px"></div>
+          <div class="text-xl text-center" id="wind"></div>
+        </div>
+        </div>
+
+        <div class="grid grid-cols-7 gap-4 text-xl pb-2">
+          <div class="col-span-2" id="weekday-0"></div>
+          <div class="col-span-2 justify-self-center"><img id="weather-icon-0" width="29px"/></div>
+          <div class="text-right" id="min-temp-0"></div>
+          <div class="text-center">/</div>
+          <div id="max-temp-0"></div>  
+        </div>
+
+        <div class="grid grid-cols-7 gap-4 text-xl pb-2">
+          <div class="col-span-2" id="weekday-1"></div>
+          <div class="col-span-2 justify-self-center"><img id="weather-icon-1" width="29px"/></div>
+          <div class="text-right" id="min-temp-1"></div>
+          <div class="text-center">/</div>
+          <div id="max-temp-1"></div>  
+        </div>
+        
+        <div class="grid grid-cols-7 gap-4 text-xl pb-2">
+          <div class="col-span-2" id="weekday-2"></div>
+          <div class="col-span-2 justify-self-center"><img id="weather-icon-2" width="29px"/></div>
+          <div class="text-right" id="min-temp-2"></div>
+          <div class="text-center">/</div>
+          <div id="max-temp-2"></div>  
+        </div>
+        
+        <div class="grid grid-cols-7 gap-4 text-xl pb-2">
+          <div class="col-span-2" id="weekday-3"></div>
+          <div class="col-span-2 justify-self-center"><img id="weather-icon-3" width="29px"/></div>
+          <div class="text-right" id="min-temp-3"></div>
+          <div class="text-center">/</div>
+          <div id="max-temp-3"></div>  
+        </div>
+        
+
+      
+      </div>
+      <div class="p-4 pl-8">
+        <div class="text-6xl font-bold justify-items-center text-left pb-8">Einkauf</div>
+      </div>
+      <div class="p-4 pl-8">
+        <div class="text-6xl font-bold justify-items-center text-left">Ämtli</div>
+        <div class="grid grid-cols-2 gap-4 pt-24">
+          <div class="text-xl">Staubsaugen:</div>
+          <div class="text-xl font-bold" id="name_staubsaugen"></div>
+          <div class="text-xl">Badezimmer:</div>
+          <div class="text-xl font-bold" id="name_badezimmer"></div>
+          <div class="text-xl">Chillen:</div>
+          <div class="text-xl font-bold" id="name_chillen"></div>
+        </div>
+      </div>
+
+
+      <div class="p-4 col-span-2 pl-8">
+        <div class="text-6xl font-bold justify-items-center text-left pb-8">Verbindungen</div>
+
+        <div class="grid grid-cols-12 gap-y-2 ">
+          <div id="eth-dep">21:35</div>
+          <div id="eth-delay" class="bg-red-700 rounded-full h-5 w-5 place-self-center text-center text-xs">+2</div>
+          <div class="col-start-10">ETH</div>
+          <div id="eth-arr" class="col-start-12 text-right">22:44</div>
+          <img src="src/img/trains/trainline.svg" class="col-span-12">
+
+          <div id="hb-dep">21:35</div>
+          <div id="hb-delay" class="bg-red-700 rounded-full h-5 w-5 place-self-center text-center text-xs">+2</div>
+          <div class="col-start-10 col-span-2">Zürich HB</div>
+          <div id="hb-arr" class="col-start-12 text-right">22:44</div>
+          <img src="src/img/trains/trainline.svg" class="col-span-12">
+
+          <div id="schaffhausen-dep">21:35</div>
+          <div id="schaffhausen-delay" class="bg-red-700 rounded-full h-5 w-5 place-self-center text-center text-xs">+2</div>
+          <div class="col-start-10">Schaffhausen</div>
+          <div id="schaffhausen-arr" class="col-start-12 text-right">22:44</div>
+          <img src="src/img/trains/trainline.svg" class="col-span-12">
+        </div>
+
+      </div>
+      
+    </div>
+    <script src="src/aemtli.js"></script>
+    <script src="src/clock.js"></script>
+    <script src="src/sbb.js"></script>
+</body>
+</html>
