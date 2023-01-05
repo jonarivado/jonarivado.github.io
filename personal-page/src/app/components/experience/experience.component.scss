@@ -1,0 +1,19 @@
+.fadeDown {
+    animation: fadeDown 0.5s linear infinite alternate;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+
+}
+
+@keyframes fadeDown {
+    from {
+        transform: translateY(200px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
