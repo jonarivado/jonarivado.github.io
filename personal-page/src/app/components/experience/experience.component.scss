@@ -1,5 +1,13 @@
+#experienceContainer {
+    min-height: 700vh;
+}
+
+#experienceTimeline {
+    transition: visibility 0s opacity 0.5s linear;
+}
+
 .fadeDown {
-    animation: fadeDown 0.5s linear infinite alternate;
+    animation: fadeDown 0.1s linear infinite alternate;
     animation-play-state: paused;
     animation-delay: calc(var(--scroll) * -1s);
     animation-iteration-count: 1;
@@ -9,7 +17,7 @@
 
 @keyframes fadeDown {
     from {
-        transform: translateY(200px);
+        transform: translateY(400px);
         opacity: 0;
     }
     to {
@@ -17,3 +25,17 @@
         opacity: 1;
     }
 }
+
+.fadeInRight {
+    animation: fadeInRight 0.5s linear infinite;
+    animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+}
+
+
+@keyframes fadeInRight {
+    to {
+        opacity: 1;
+    }
+}
+

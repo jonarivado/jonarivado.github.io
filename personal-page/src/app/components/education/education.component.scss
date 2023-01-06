@@ -1,15 +1,19 @@
-.fadeDown2 {
-    animation: fadeDown 1s linear;
+.fadeDownLate {
+    animation: fadeDownLate 0.9s linear infinite alternate;
     animation-play-state: paused;
-  animation-delay: calc(var(--scroll) * -1s);
+    animation-delay: calc(var(--scroll) * -1s);
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+
 }
 
-@keyframes fadeDown2 {
+@keyframes fadeDownLate {
     from {
+        transform: translateY(-400px);
         opacity: 0;
     }
     to {
-        transform: translateY(100%);
+        transform: translateY(0px);
         opacity: 1;
     }
 }
