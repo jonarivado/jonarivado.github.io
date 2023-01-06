@@ -32,8 +32,7 @@ export class ExperienceComponent implements OnInit {
       let screensize = window.innerWidth;
       let scrolled = window.scrollY/window.innerHeight-1;
       if (scrolled > 0) {
-        document.getElementById("experienceTimeline")!.style.visibility = "visible";
-        document.getElementById("experienceTimeline")!.style.opacity = "1";
+        document.getElementById("experienceTimeline")!.style.display = "flex";
         if(screensize > 768) {
         document.getElementById("experienceTimeline")!.style.transform = "translateX(" + scrolled/19*this.workExperience.length * -100 + "vw)";
       }
@@ -43,8 +42,7 @@ export class ExperienceComponent implements OnInit {
       }
     }
       else {
-        document.getElementById("experienceTimeline")!.style.visibility = "hidden";
-        document.getElementById("experienceTimeline")!.style.opacity = "0";
+        document.getElementById("experienceTimeline")!.style.display = "none";
       }
     }
   };

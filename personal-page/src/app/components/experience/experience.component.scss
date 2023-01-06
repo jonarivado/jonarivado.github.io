@@ -27,13 +27,14 @@
 }
 
 .fadeInRight {
-    animation: fadeInRight 0.5s linear infinite;
-    animation-play-state: paused;
-  animation-delay: calc(var(--scroll) * -1s);
+    animation: fadeInRight 0.2s ease-in-out;
 }
 
 
 @keyframes fadeInRight {
+    from {
+        opacity: 0;
+    }
     to {
         opacity: 1;
     }
