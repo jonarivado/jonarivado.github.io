@@ -9,7 +9,6 @@ import { HeaderComponent } from './components/header/header.component';
 import { EducationComponent } from './components/education/education.component';
 
 
-import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { TimelineElementComponent } from './components/timeline-element/timeline-element.component';
 import { ContactComponent } from './components/contact/contact.component';
@@ -29,7 +28,6 @@ import { ProjectsComponent } from './components/projects/projects.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AnimateOnScrollModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

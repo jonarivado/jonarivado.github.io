@@ -27,6 +27,9 @@ export class ExperienceComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
+    document.getElementById("experienceTimeline")!.style.display = "none";
+
     document.onscroll = () => {
       //scroll horizontally if the user has reached the work experience section
       let screensize = window.innerWidth;
