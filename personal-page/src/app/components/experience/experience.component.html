@@ -1,0 +1,13 @@
+<div class="overflow-hidden">
+    <div class="container mx-auto px-8 md:px-12 pt-20 bg-white" id="experienceContainer">
+        <div class="fadeDown">
+            <h2 class="font-bold text-black md:text-8xl text-4xl">Work Experience</h2>
+        </div>
+        <div id="experienceTimeline" class="fadeInRight fixed bottom-24 flex flex-row pl-8">
+            <div *ngFor="let exp of workExperience">
+                <app-timeline-element [company]="exp.company" [title]="exp.title" [time]="exp.time" [description]="exp.description" [location]="exp.location"
+                    [keywords]="exp.keywords"></app-timeline-element>
+            </div>
+        </div>
+    </div>
+</div>

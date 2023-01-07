@@ -1,0 +1,26 @@
+.fadeLeft {
+    animation: fadeLeft 0.1s linear infinite;
+    animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+}
+
+.fadeRight {
+    animation: fadeRight 0.1s linear infinite;
+    animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+}
+
+@keyframes fadeLeft {
+    to {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+@keyframes fadeRight {
+    to {
+        transform: translateX(100%);
+        opacity: 0;
+
+    }
+}
