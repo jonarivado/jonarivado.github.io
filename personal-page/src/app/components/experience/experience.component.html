@@ -3,7 +3,7 @@
         <div class="fadeDown">
             <h2 class="font-bold text-black md:text-8xl text-4xl">Work Experience</h2>
         </div>
-        <div id="experienceTimeline" class="fadeInRight fixed bottom-24 flex flex-row" style="transform: translateX(100%);">
+        <div id="experienceTimeline" class="fadeInRight fixed bottom-24 flex flex-row pl-8">
             <div *ngFor="let exp of workExperience">
                 <app-timeline-element [company]="exp.company" [title]="exp.title" [time]="exp.time" [description]="exp.description" [location]="exp.location"
                     [keywords]="exp.keywords"></app-timeline-element>

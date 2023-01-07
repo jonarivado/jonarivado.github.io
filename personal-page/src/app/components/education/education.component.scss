@@ -1,5 +1,5 @@
 .fadeDownLate {
-    animation: fadeDownLate 0.9s linear infinite alternate;
+    animation: fadeDownLate 0.8s linear infinite alternate;
     animation-play-state: paused;
     animation-delay: calc(var(--scroll) * -1s);
     animation-iteration-count: 1;
@@ -9,11 +9,26 @@
 
 @keyframes fadeDownLate {
     from {
-        transform: translateY(-400px);
+        transform: translateX(4000px);
         opacity: 0;
     }
     to {
-        transform: translateY(0px);
+        transform: translateX(0px);
         opacity: 1;
+    }
+}
+
+.progress-bar-value {
+    animation: progress-bar-value 1s ease-in-out normal forwards;
+    background-image: linear-gradient(-90deg, #69fbff, #ef04dd);
+    animation-play-state: paused;
+}
+
+@keyframes progress-bar-value {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 10%;
     }
 }

@@ -12,6 +12,8 @@ import { EducationComponent } from './components/education/education.component';
 import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { TimelineElementComponent } from './components/timeline-element/timeline-element.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { ProjectsComponent } from './components/projects/projects.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +22,9 @@ import { TimelineElementComponent } from './components/timeline-element/timeline
     HeaderComponent,
     EducationComponent,
     ExperienceComponent,
-    TimelineElementComponent
+    TimelineElementComponent,
+    ContactComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,
