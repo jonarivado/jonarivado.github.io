@@ -12,6 +12,8 @@ export class HomeComponent implements OnInit {
     window.addEventListener('scroll', () => {
       document.body.style.setProperty('--scroll', Number(window.scrollY / (document.body.offsetHeight - window.innerHeight)).toString());
     }, false);
+
+    
   }
 
 }

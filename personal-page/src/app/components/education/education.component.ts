@@ -10,10 +10,7 @@ export class EducationComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    if(window.scrollY > 2*window.innerHeight) {
-      document.getElementById("progress-bar-value")!.style.animationPlayState = "running";
-    }
-    
-  }
+
+}
 
 }

@@ -1,0 +1,58 @@
+.fadeLeftContact {
+    animation: fadeLeftContact 1s linear infinite;
+    animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+.fadeRightContact {
+    animation: fadeRightContact 1s linear infinite;
+    animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeLeftContact {
+    from {
+        transform: translateX(400%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeRightContact {
+    from {
+        transform: translateX(-400%);
+        opacity: 0;
+
+    }
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.fadeDownContact {
+    animation: fadeDown 1s linear infinite;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -0.95s);
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+
+}
+
+@keyframes fadeDown {
+    from {
+        transform: translateY(-800%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}

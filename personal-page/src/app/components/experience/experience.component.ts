@@ -47,6 +47,9 @@ export class ExperienceComponent implements OnInit {
       else {
         document.getElementById("experienceTimeline")!.style.display = "none";
       }
+      if(window.scrollY > 7*window.innerHeight) {
+        document.getElementById("progress-bar-value")!.style.animationPlayState = "running";
+      }
     }
   };
 }
